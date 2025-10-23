@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="820" viewBox="0 0 1200 820" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    .bg { fill: #f7f7f7; }
+    .panel { fill: #ffffff; stroke: #d0d7de; stroke-width: 1; rx:8; ry:8; }
+    .muted { fill: #6b7280; font-family: Arial, Helvetica, sans-serif; font-size:14px; }
+    .title { font-family: 'Segoe UI', Roboto, Arial; font-size:28px; fill:#0f172a; font-weight:700; }
+    .label { font-family: Arial; font-size:12px; fill:#475569; }
+    .box { fill:#eef2ff; stroke:#c7d2fe; stroke-width:1; rx:6; ry:6; }
+    .thin { stroke:#e6e9ee; stroke-width:1; fill:none; }
+    .nav-item { font-family: Arial; font-size:13px; fill:#0f172a; }
+    .article-title { font-family: Arial; font-size:16px; font-weight:600; fill:#0f172a; }
+    .small { font-family: Arial; font-size:12px; fill:#334155; }
+    .fig { fill:#e6fffa; stroke:#bdebe2; stroke-width:1; rx:4; ry:4; }
+  </style>
+
+  <!-- background -->
+  <rect class="bg" x="0" y="0" width="1200" height="820" />
+
+  <!-- Top header area -->
+  <g transform="translate(40,28)">
+    <rect class="panel" x="0" y="0" width="1120" height="92" />
+    <text x="20" y="36" class="title">Green Thumb Blog</text>
+    <g transform="translate(20,46)">
+      <rect x="0" y="0" width="700" height="36" class="thin" />
+      <text x="12" y="22" class="nav-item">Home</text>
+      <text x="70" y="22" class="nav-item">About</text>
+      <text x="140" y="22" class="nav-item">Categories</text>
+      <text x="240" y="22" class="nav-item">Contact</text>
+      <text x="520" y="22" class="muted">nav &lt;nav&gt; (ul &gt; li)</text>
+    </g>
+    <text x="920" y="20" class="label">Header → &lt;header&gt;</text>
+  </g>
+
+  <!-- Main content + aside panels -->
+  <g transform="translate(40,140)">
+    <!-- main panel -->
+    <rect class="panel" x="0" y="0" width="780" height="540" />
+    <text x="24" y="30" class="label">Main → &lt;main&gt;</text>
+
+    <!-- Latest posts section label -->
+    <text x="24" y="62" class="label">Section: Latest Posts → &lt;section&gt;</text>
+
+    <!-- Article 1 -->
+    <g transform="translate(24,84)">
+      <rect x="0" y="0" width="720" height="110" class="box" />
+      <rect x="12" y="12" width="120" height="84" class="fig" />
+      <text x="144" y="36" class="article-title">How to Start a Low-Maintenance Terrarium</text>
+      <text x="144" y="58" class="small">&lt;article&gt; — &lt;h3&gt;, &lt;time&gt;, &lt;p&gt;</text>
+      <text x="144" y="80" class="muted">Short excerpt: choose plants, soil layers, care tips…</text>
+    </g>
+
+    <!-- Article 2 -->
+    <g transform="translate(24,206)">
+      <rect x="0" y="0" width="720" height="110" class="box" />
+      <rect x="12" y="12" width="120" height="84" class="fig" />
+      <text x="144" y="36" class="article-title">5 Plants That Thrive in Humid Environments</text>
+      <text x="144" y="58" class="small">&lt;article&gt; — &lt;h3&gt;, &lt;blockquote&gt;, &lt;em&gt;</text>
+      <text x="144" y="80" class="muted">Short excerpt: ferns, mosses, humidity balance…</text>
+    </g>
+
+    <!-- Article 3 -->
+    <g transform="translate(24,328)">
+      <rect x="0" y="0" width="720" height="110" class="box" />
+      <rect x="12" y="12" width="120" height="84" class="fig" />
+      <text x="144" y="36" class="article-title">Troubleshooting Common Terrarium Problems</text>
+      <text x="144" y="58" class="small">&lt;article&gt; — &lt;h3&gt;, &lt;p&gt; , &lt;a&gt;</text>
+      <text x="144" y="80" class="muted">Short excerpt: yellow leaves, condensation issues…</text>
+    </g>
+
+    <!-- Editorial section -->
+    <g transform="translate(24,452)">
+      <rect x="0" y="0" width="720" height="66" class="panel" />
+      <text x="12" y="22" class="small"><strong>From the Editor</strong> — &lt;section&gt; with &lt;article&gt;</text>
+      <text x="12" y="44" class="muted">Short note: why small ecosystems matter</text>
+    </g>
+  </g>
+
+  <!-- Sidebar -->
+  <g transform="translate(840,140)">
+    <rect class="panel" x="0" y="0" width="320" height="540" />
+    <text x="18" y="30" class="label">Sidebar → &lt;aside&gt;</text>
+
+    <g transform="translate(18,50)">
+      <rect x="0" y="0" width="284" height="86" class="panel" />
+      <text x="12" y="24" class="muted">&lt;section id=&quot;about&quot;&gt;</text>
+      <text x="12" y="44" class="small">About: short site description</text>
+    </g>
+
+    <g transform="translate(18,150)">
+      <rect x="0" y="0" width="284" height="146" class="panel" />
+      <text x="12" y="24" class="muted">&lt;section id=&quot;recent&quot;&gt;</text>
+      <text x="12" y="46" class="small">Recent posts → &lt;ul&gt; &lt;li&gt; &lt;a&gt;</text>
+      <text x="12" y="68" class="small">• How to Start a Low-Maintenance Terrarium</text>
+      <text x="12" y="84" class="small">• 5 Plants That Thrive in Humid Environments</text>
+      <text x="12" y="100" class="small">• Troubleshooting Common Terrarium Problems</text>
+    </g>
+
+    <g transform="translate(18,316)">
+      <rect x="0" y="0" width="284" height="118" class="panel" />
+      <text x="12" y="24" class="muted">&lt;section id=&quot;categories&quot;&gt;</text>
+      <text x="12" y="46" class="small">Categories: Beginner Guides, Plant Profiles, Troubleshooting</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(40,700)">
+    <rect class="panel" x="0" y="0" width="1120" height="90" />
+    <text x="20" y="36" class="small">Footer → &lt;footer&gt; — contact link, copyright, socials</text>
+    <text x="20" y="60" class="muted">Contact: hello@greenthumb.example  •  © 2025 Green Thumb Blog</text>
+  </g>
+
+  <!-- Legend / notes -->
+  <g transform="translate(40,620)">
+    <text x="0" y="18" class="muted">Design notes: Each major box is labeled with the semantic element to use in HTML. Import this SVG into Figma and use rectangles/text as frames and layers; convert the colored panels into components if desired.</text>
+  </g>
+</svg>
